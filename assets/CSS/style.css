@@ -1,0 +1,77 @@
+.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: burlywood;
+}
+
+main{
+    display: flex;
+    flex: 0 0 400px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 2% auto;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav li{
+    margin: 20px;
+}
+
+h2{
+    font-size: 200%;
+    margin: 5px;
+}
+
+.about-me{
+    display: flex;
+    flex: 0 0 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    border-style: solid;
+    border-radius: 50px;
+    
+}
+
+.about-me img{
+    width: 65%; 
+}
+
+.about-me p{
+    margin: 5%;
+}
+
+.work{
+    display: flex;
+    flex: 0 0 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-radius: 50px;
+    margin: 50px;
+    background-color: blue;
+}
+
+.work img{
+    width: 75%;
+    border-style: solid;
+    border-radius: 50px;
+}
+
+.contact-me{
+    display: flex;
+    border-style: solid;
+    margin: 3%;
+}
+
+.contact-me li{
+    margin: 5px;
+}
