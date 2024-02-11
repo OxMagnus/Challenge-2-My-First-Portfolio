@@ -1,17 +1,32 @@
+:root {
+    --lighter: burlywood;
+    --darker: blue;
+    --background: black;
+    --max-size: 1600px;
+    --curved-edges: 50px;
+}
+
 .main-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: burlywood;
+    background-color: var(--lighter);
+    max-width: var(--max-size);
 }
 
 main{
     display: flex;
     flex: 0 0 400px;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: var(--max-size);
     margin: 2% auto;
+    align-items: center;
+    justify-content: center; 
+}
+
+body{
+    background-color: var(--background);
 }
 
 nav ul{
@@ -32,16 +47,18 @@ h2{
 .about-me{
     display: flex;
     flex: 0 0 400px;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
+    align-items: center;
     border-style: solid;
-    border-radius: 50px;
-    
+    border-radius: var(--curved-edges);
+    margin: 14%;
+    background-color: var(--darker);
 }
 
 .about-me img{
     width: 65%; 
+    border-style: solid;
 }
 
 .about-me p{
@@ -55,23 +72,54 @@ h2{
     flex-direction: column;
     align-items: center;
     border-style: solid;
-    border-radius: 50px;
+    border-radius: var(--curved-edges);
     margin: 50px;
-    background-color: blue;
+    background-color: var(--darker);
 }
 
-.work img{
+.top-project{
+    width: 95%;
+    border-style: solid;
+    border-radius: var(--curved-edges);
+}
+
+.lower-project{
     width: 75%;
     border-style: solid;
-    border-radius: 50px;
-}
+    border-radius: var(--curved-edges);
+}  
 
 .contact-me{
     display: flex;
     border-style: solid;
     margin: 3%;
+    background-color: var(--lighter);
 }
 
 .contact-me li{
     margin: 5px;
+}
+
+footer{
+    display: flex;
+    background-color: var(--lighter);
+}
+
+footer p{
+    margin-left: 4%;
+}
+
+@media screen and (max-width: 1150px) {
+  header, main {
+    flex-direction: column;
+  }
+
+  section {
+    padding-right: 0;
+  }
+
+  aside {
+    width: 100%;
+    text-align: center;
+  }
 }
