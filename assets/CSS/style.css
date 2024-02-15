@@ -83,6 +83,10 @@ h2{
     border-radius: var(--curved-edges);
 }
 
+.top-project:active{
+    
+}
+
 .lower-project{
     width: 75%;
     border-style: solid;
